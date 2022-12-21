@@ -48,7 +48,7 @@ resource "aws_route_table_association" "public_rt_asso" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-094125af156557ca2" 
+  ami           = "ami-0b5eea76982371e91" 
   instance_type = var.instance_type
 
   subnet_id              = aws_subnet.public_subnet.id
